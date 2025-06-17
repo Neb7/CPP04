@@ -6,7 +6,7 @@
 /*   By: benpicar <benpicar@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 13:47:27 by benpicar          #+#    #+#             */
-/*   Updated: 2025/06/04 16:56:25 by benpicar         ###   ########.fr       */
+/*   Updated: 2025/06/17 15:28:59 by benpicar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Dog::Dog() : AAnimal(), _brain(new Brain())
  * 
  * @param	origin The Dog object to copy from.
  */
-Dog::Dog(Dog const &origin)
+Dog::Dog(Dog const &origin) : AAnimal(), _brain(NULL)
 {
 	*this = origin;
 	std::cout << this->_type << " copied" << std::endl;

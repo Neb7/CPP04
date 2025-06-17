@@ -6,7 +6,7 @@
 /*   By: benpicar <benpicar@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 13:08:50 by benpicar          #+#    #+#             */
-/*   Updated: 2025/06/04 16:55:59 by benpicar         ###   ########.fr       */
+/*   Updated: 2025/06/17 15:28:53 by benpicar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Cat::Cat() : AAnimal(), _brain(new Brain())
  * 
  * @param	origin The Cat object to copy from.
  */
-Cat::Cat(Cat const &origin)
+Cat::Cat(Cat const &origin) : AAnimal(), _brain(NULL)
 {
 	*this = origin;
 	std::cout << this->_type << " copied" << std::endl;
